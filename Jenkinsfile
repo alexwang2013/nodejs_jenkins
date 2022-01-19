@@ -4,13 +4,13 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node --version'
-                sh 'echo "Hello World"'
-                sh '''
-                    xyz "Multiline shell steps works too"
-                    ls -lah
-                '''
+                sh 'echo "Build Success'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo "Deployed"'
             }
         }
     }
-    
 }
