@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node --version'
-                sh 'echo "Build Success'
+                sh 'echo "Build Success"'
             }
         }
         stage('deploy') {
